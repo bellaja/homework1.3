@@ -1,7 +1,6 @@
 package ru.netology
 fun main(args: Array<String>) {
     println(calculatePrice(500, 1, true))
-
 }
 
 val discount = 100
