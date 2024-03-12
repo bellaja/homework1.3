@@ -1,6 +1,6 @@
 package ru.netology
 fun main(args: Array<String>) {
-    println(calculatetotalPrice(50000, 1, true))
+    println(calculatePrice(500, 1, true))
 
 }
 
@@ -8,7 +8,9 @@ val discount = 100
 val premiumDiscount = 1 - 0.05
 val vipDiscount = 1 - 0.01
 var totalPrice = 0
-fun calculatetotalPrice(amount: Int, itemCount: Int, buyer: Boolean): Int {
+fun calculatePrice(amount: Int,
+                   itemCount: Int,
+                   buyer: Boolean): Int {
     val result = amount * itemCount
     when {
         amount > 0 && amount < 1001 -> if (buyer === false) totalPrice = result
